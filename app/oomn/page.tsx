@@ -20,9 +20,8 @@ function absUrl(path: string) {
 }
 
 export async function generateMetadata(): Promise<Metadata> {
-  const title = "SEO";
-  const description =
-    "SEO demo with dynamic metadata, OpenGraph images, and favicon per slug.";
+  const title = "SEO Static Page";
+  const description = "SEO sttskjvnsfjvsfni n kisjdnvisdj.";
 
   return {
     metadataBase: SITE_URL,
@@ -34,11 +33,12 @@ export async function generateMetadata(): Promise<Metadata> {
     openGraph: {
       title,
       description,
-      url: absUrl("/seo"),
+      url: absUrl("/seo/oomn"),
       images: [
         {
-          url: "/uuu.png",
-          secureUrl: "/uuu.png",
+          url: "https://res.cloudinary.com/dz4augbi8/image/upload/q_auto/f_auto/v1739447626/next-beloogo/r5bekcjmib7amcguul53.jpg",
+          secureUrl:
+            "https://res.cloudinary.com/dz4augbi8/image/upload/q_auto/f_auto/v1739447626/next-beloogo/r5bekcjmib7amcguul53.jpg",
           width: 1200,
           height: 630,
           alt: "blogoo preview",
@@ -55,25 +55,14 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 export default function Page() {
-  const examples = ["alpha", "beta", "learn-seo", "opengraph-demo"];
-
   return (
     <div className="max-w-3xl">
-      <h1 className="text-3xl font-semibold">SEO (static page)</h1>
+      <h1 className="text-3xl font-semibold">Ooom Test</h1>
       <p className="mt-2 text-zinc-700 dark:text-zinc-300">
-        Open `SEO demo` slugs to see `generateMetadata`, OpenGraph image, and
-        favicon change per `umb`.
+        ommm value static page
       </p>
 
-      <ul className="mt-6 space-y-2">
-        {examples.map((umb) => (
-          <li key={umb}>
-            <Link className="underline" href={`/seo/${umb}`}>
-              /seo/{umb}
-            </Link>
-          </li>
-        ))}
-      </ul>
+      <h1>OOOmbn</h1>
     </div>
   );
 }
