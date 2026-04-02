@@ -35,13 +35,13 @@ export async function generateMetadata(): Promise<Metadata> {
       title,
       description,
       url: absUrl("/seo"),
-      images: [absUrl("/seo/opengraph-image")],
+      images: [absUrl("/uuu.png")],
     },
     twitter: {
       card: "summary_large_image",
       title,
       description,
-      images: [absUrl("/seo/opengraph-image")],
+      images: [absUrl("/uuu.png")],
     },
   };
 }
