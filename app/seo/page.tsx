@@ -34,7 +34,7 @@ export async function generateMetadata(): Promise<Metadata> {
     openGraph: {
       title,
       description,
-      url: absUrl("/seo"),
+      url: absUrl("/seo/oombu"),
       images: [
         {
           url: "/uuu.png",
