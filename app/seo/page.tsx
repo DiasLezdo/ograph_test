@@ -35,7 +35,16 @@ export async function generateMetadata(): Promise<Metadata> {
       title,
       description,
       url: absUrl("/seo"),
-      images: [absUrl("/uuu.png")],
+      images: [
+        {
+          url: "/favicon/freepik__the-style-is-candid-image-photography-with-natural__70521.png",
+          secureUrl:
+            "/favicon/freepik__the-style-is-candid-image-photography-with-natural__70521.png",
+          width: 1200,
+          height: 630,
+          alt: "blogoo preview",
+        },
+      ],
     },
     twitter: {
       card: "summary_large_image",
