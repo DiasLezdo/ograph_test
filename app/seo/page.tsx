@@ -37,9 +37,8 @@ export async function generateMetadata(): Promise<Metadata> {
       url: absUrl("/seo"),
       images: [
         {
-          url: "/favicon/freepik__the-style-is-candid-image-photography-with-natural__70521.png",
-          secureUrl:
-            "/favicon/freepik__the-style-is-candid-image-photography-with-natural__70521.png",
+          url: "/uuu.png",
+          secureUrl: "/uuu.png",
           width: 1200,
           height: 630,
           alt: "blogoo preview",
