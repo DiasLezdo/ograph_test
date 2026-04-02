@@ -1,7 +1,19 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:4000";
+const FALLBACK_SITE_URL = "http://localhost:4000";
+
+function safeSiteUrl() {
+  const raw = process.env.NEXT_PUBLIC_SITE_URL;
+  if (!raw) return new URL(FALLBACK_SITE_URL);
+  try {
+    return new URL(raw);
+  } catch {
+    return new URL(FALLBACK_SITE_URL);
+  }
+}
+
+const SITE_URL = safeSiteUrl();
 
 function absUrl(path: string) {
   return new URL(path, SITE_URL).toString();
@@ -27,7 +39,7 @@ export async function generateMetadata({
   const faviconUrl = absUrl(`/seo/${encodedUmb}/favicon.svg`);
 
   return {
-    metadataBase: new URL(SITE_URL),
+    metadataBase: SITE_URL,
     title,
     description,
     icons: {
