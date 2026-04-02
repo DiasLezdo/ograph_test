@@ -44,6 +44,8 @@ export async function generateMetadata(): Promise<Metadata> {
           alt: "blogoo preview",
         },
       ],
+      type: "website",
+      siteName: `${process.env.NEXT_PUBLIC_SITE_URL!}/oomn`,
     },
     twitter: {
       card: "summary_large_image",
