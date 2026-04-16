@@ -1,0 +1,15 @@
+# About Dynamic Imports
+
+When you open `/blog/about`, Next loads this file based on the slug.
+
+```ts
+const { default: Post } = await import(`@/content/${slug}.mdx`);
+```
+
+```ts
+export function generateStaticParams() {
+  return [{ slug: "welcome" }, { slug: "about" }];
+}
+```
+
+> Keep `dynamicParams = false` if you only want known slugs.
