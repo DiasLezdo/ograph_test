@@ -13,8 +13,19 @@ export default function Home() {
           height={20}
           priority
         />
-        <div>
-          <Link href="/seo">SEO</Link>
+        <div className="flex flex-wrap gap-3">
+          <Link className="rounded-md border border-zinc-300 px-3 py-1.5 text-sm" href="/seo">
+            SEO
+          </Link>
+          <Link className="rounded-md border border-zinc-300 px-3 py-1.5 text-sm" href="/blog">
+            Blog (MDX)
+          </Link>
+          <Link
+            className="rounded-md border border-blue-300 bg-blue-50 px-3 py-1.5 text-sm font-medium text-blue-800"
+            href="/parallel-demo"
+          >
+            Parallel Demo
+          </Link>
         </div>
       </main>
     </div>
