@@ -14,10 +14,16 @@ export default function Home() {
           priority
         />
         <div className="flex flex-wrap gap-3">
-          <Link className="rounded-md border border-zinc-300 px-3 py-1.5 text-sm" href="/seo">
+          <Link
+            className="rounded-md border border-zinc-300 px-3 py-1.5 text-sm"
+            href="/seo"
+          >
             SEO
           </Link>
-          <Link className="rounded-md border border-zinc-300 px-3 py-1.5 text-sm" href="/blog">
+          <Link
+            className="rounded-md border border-zinc-300 px-3 py-1.5 text-sm"
+            href="/blog"
+          >
             Blog (MDX)
           </Link>
           <Link
@@ -26,6 +32,21 @@ export default function Home() {
           >
             Parallel Demo
           </Link>
+          <div className="flex flex-wrap gap-3 border-2 border-dashed border-green-500 p-4 m-4 rounded-xl">
+            <h1 className="text-lg font-medium text-orange-500">Group route</h1>
+            <Link
+              className="rounded-md border border-purple-300 bg-purple-50 px-3 py-1.5 text-sm font-medium text-purple-800"
+              href="/route-group/about"
+            >
+              Marketing About
+            </Link>
+            <Link
+              className="rounded-md border border-cyan-300 bg-cyan-50 px-3 py-1.5 text-sm font-medium text-cyan-800"
+              href="/route-group/career"
+            >
+              Development Career
+            </Link>
+          </div>
         </div>
       </main>
     </div>
