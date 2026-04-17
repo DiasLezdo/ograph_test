@@ -47,6 +47,12 @@ export default function Home() {
               Development Career
             </Link>
           </div>
+          <Link
+            className="rounded-md border border-orange-300 bg-orange-50 px-3 py-1.5 text-sm font-medium text-orange-800 self-center"
+            href="/temp-demo"
+          >
+            Template Demo (Suspense)
+          </Link>
         </div>
       </main>
     </div>
