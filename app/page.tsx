@@ -53,6 +53,12 @@ export default function Home() {
           >
             Template Demo (Suspense)
           </Link>
+          <Link
+            className="rounded-md border border-slate-300 bg-slate-50 px-3 py-1.5 text-sm font-medium text-slate-800 self-center"
+            href="/draft-demo"
+          >
+            Draft Mode Demo
+          </Link>
         </div>
       </main>
     </div>
