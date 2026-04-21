@@ -59,6 +59,12 @@ export default function Home() {
           >
             Draft Mode Demo
           </Link>
+          <Link
+            className="rounded-md border border-teal-300 bg-teal-50 px-3 py-1.5 text-sm font-medium text-teal-800 self-center"
+            href="/learning/user-agent"
+          >
+            User Agent Inspector
+          </Link>
         </div>
       </main>
     </div>
